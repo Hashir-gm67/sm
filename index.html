@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d4bdc3b12a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/My logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer & UX/UI Designer</p>
+          <h1>Hi, I'm <span><br> Sawera Mubeen</span></h1>
+        </div>
+      </div>
+    </div>
+    <!----About---->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/About me.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi there! I'm Sawera Mubeen, a passionate web developer and
+              UX/UI designer. With <b>1 year of experience</b> under my belt,
+              I've honed my skills in creating seamless digital experiences that
+              blend functionality with aesthetics.<br /><br />
+              I studied <b>Computer Science</b> at <b>AIR University</b>,
+              where I delved into the intricacies of coding, algorithms, and
+              software architecture. My coursework equipped me with a solid
+              foundation in both front-end and back-end development.<br /><br />
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <br />
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />
+                  Web/App development
+                </li>
+                <li>
+                  <span>UX/UI</span><br />
+                  Designing for Web/App Interfaces
+                </li>
+                <li>
+                  <span>App Developer</span><br />
+                  Buliding iOS /Anroid apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - July 2024</span><br />
+                  BSCS from AIR UNIVERSITY
+                </li>
+                <li>
+                  <span>2018 - 2020</span><br />
+                  FSC from Askaria Group of Schools and Colleges
+                </li>
+                <li>
+                  <span>2016 - 2018</span><br />
+                  Matric from Govt. National College PAF Mushaf
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>January 2024</span><br />
+                  Certificate for participating in Data Quest Competition, AirTech24 at Air University
+                </li>
+                <li>
+                  <span>October 2023 - July 2024</span><br />
+                  Worked on Live Project in App development for Deaf Community
+                </li>
+                <li>
+                  <span>July - Oct 2024</span><br />
+                  3 months internship in Web development from Fusion Tech<br />
+                </li>
+                <li>
+                  <span>May 2024</span><br />
+                  Certifacte of Completion of Html and Css from Great Learning
+                  <br />
+                </li>
+                <li>
+                  <span>Jan 2021</span><br />
+                  Certifacte of participating in Freelancing event by Hisham Sarwar<br />
+                </li>
+                <li>
+                  <span>July - September 2023</span><br />
+                  3 month internship in Web development from TechInn360
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div onclick="window.location.href='https://fusion-work.vercel.app/'" style="cursor: pointer;">
+            <i  class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            
+            <p>
+              As a web developer, I thrive on turning ideas into reality.
+              Whether it's crafting responsive websites, building interactive
+              web applications, or optimizing performance, I'm always up for a
+              coding challenge.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div onclick="window.location.href='https://www.figma.com/design/jQKUiXPQeV4ETe2dG6dU34/Echo-Hands?node-id=0-1&t=M1HuOnCTZmfkbbGJ-0'" style="cursor: pointer;">
+            <i class="fa-solid fa-clone"></i>
+            <h2>UX/UI Designer</h2>
+            <p>
+              Design is my playground. I believe that a well-designed interface
+              can make or break user engagement.My canvas of choice, I craft
+              pixel-perfect designs, collaborate with teams, and iterate until
+              it feels just right.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div onclick="window.location.href='https://www.figma.com/proto/jQKUiXPQeV4ETe2dG6dU34/Echo-Hands?node-id=4-27&t=M1HuOnCTZmfkbbGJ-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A27'" style="cursor: pointer;">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Developer</h2>
+            <p>
+              As an app developer, I'm passionate about building mobile
+              experiences that users love. I've explored the Android platform,
+              creating native apps that run smoothly on a variety of devices.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------portfolio--------->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project 2.png">
+                <div class="layer">
+                    <h3>Web Development Design</h3>
+                    <p>The website helps you in car rental</p>
+                    <a href="https://www.figma.com/design/HTIqHLAlMEzxYhmdEEzvqY/Car-Rental?node-id=0-1&t=Y2Njagted8RGZQzE-0"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/project 3.jpg">
+                <div class="layer">
+                    <h3>App Development Design</h3>
+                    <p>The App allow you to listen your favourite music Anytime,Anywhere. Download now from AppStore </p>
+                    <a href="https://fusion-lime.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/project 1.png">
+                <div class="layer">
+                    <h3>App Development Design</h3>
+                    <p>The App helps you in your daily shopping.</p>
+                    <a href="https://pizza-sm.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="button">See More</a>
+      </div>
+    </div>
+    <!-------Contact -------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Saweramubeen34@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03420050550</p>
+                    <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/sawera-mubeen-sm67" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://github.com/SaweraMubeen/FusionTech"><i class="fa-brands fa-square-github"></i></a>
+                      <a href="https://www.instagram.com/sawera_istics?igsh=MW5vMTl3ZGZvYjJhdA=="><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/MyCV.pdf" download class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" email="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrightt">
+      <p>Copyright &copy; 2024 All rights reserved | Designed by Sawera Mubeen<span></span>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu =document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+  </body>
+</html>
